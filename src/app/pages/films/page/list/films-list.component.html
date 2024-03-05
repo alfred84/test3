@@ -1,0 +1,13 @@
+<div *ngIf="filmsByPage.length > 0" class="card list-container">
+    <ul>
+        <li *ngFor="let film of filmsByPage">
+            {{ film.title }} / {{ film.director }} / {{ film.release_date }}
+            <a routerLink= "{{ film.url | detailsLink }}" >More Details..</a>
+        </li>
+    </ul>
+
+    <div class="text-end">
+        <button (click)="onPrevious()" [disabled]="!previous" type="button" class="btn btn-secondary">Anterior</button>&nbsp;
+        <button (click)="onNext()" [disabled]="!next" type="button" class="btn btn-secondary">Siguiente</button>
+    </div>
+</div>

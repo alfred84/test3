@@ -1,0 +1,10 @@
+<div class="topnav">
+    <a href="javascript:;"><strong>Términos buscados:</strong></a>
+    <a *ngFor="let item of searchedTerms" (click)="search(item)" href="javascript:;">{{ item }}</a>
+    <div class="search-container">
+        <form>            
+            <input type="text" placeholder="Search.." [(ngModel)]="term" name="term"/>
+            <button (click)="search()"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>

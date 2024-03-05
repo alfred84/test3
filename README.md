@@ -1,27 +1,11 @@
 # Test3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
-## Development server
+## Ejecutar proyecto en modo desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para ejecutar el proyecto en modo de desarrollo ejecutar comando `ng serve`. En su navegador abra la url `http://localhost:4200/` la cual lo redirigirá hacia `http://localhost:4200/people` donde ha sido implementada la busqueda y lamacenamiento de terminos relacionados con este recurso. 
 
-## Code scaffolding
+## Ejecutar test unitario
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecute `ng test` para ejecutar un simple test unitario del comonente de listado de peliculas o films via [Karma](https://karma-runner.github.io).

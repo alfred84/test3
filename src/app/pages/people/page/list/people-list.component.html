@@ -1,0 +1,14 @@
+<div *ngIf="personsByPage.length > 0" class="card list-container">
+    <ul style="list-style-type: none;">
+        <li *ngFor="let person of personsByPage">
+            {{ person.name }} / {{ person.height | numeroTexto }} / {{ person.homeworld | homeworld | async }}
+            <a routerLink= "{{ person.url | detailsLink }}">More Details..</a>
+        </li>
+    </ul>
+
+    <div class="text-end">
+        <button (click)="onPrevious()" [disabled]="!previous"  type="button" class="btn btn-secondary">Anterior</button>&nbsp;    
+        <button (click)="onNext()" [disabled]="!next"  type="button" class="btn btn-secondary">Siguiente</button>
+    </div>
+    
+</div>
